@@ -13,8 +13,8 @@ usage() {
 	echo " -h|--help : show help"
 }
 
-[ "$1" == "-h" ] && usage && exit
-[ "$1" == "--help" ] && usage && exit
+[ "$1" = "-h" ] && usage && exit
+[ "$1" = "--help" ] && usage && exit
 
 # Check R Install
 type Rscript &> /dev/null || _result=1
